@@ -3,7 +3,7 @@ name: Publish py-logger-alert to PyPI
 on:
   push:
     tags:
-      - 'v*' # Vai rodar sempre que você criar uma tag tipo v0.1.2
+      - 'v*'
 
 jobs:
   build-n-publish:
