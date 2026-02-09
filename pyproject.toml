@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py-logger-alert" # Escolha um nome único no PyPI
-version = "0.1.5"
+name = "py-logger-alert"
+version = "0.2.0"
 authors = [
   { name="Vitor Marinheiro", email="vitormarinheiro9@gmail.com" },
 ]

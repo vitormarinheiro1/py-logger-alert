@@ -13,9 +13,6 @@ Ideal para quem roda bots, automações, robôs de trading ou scripts agendados 
 - 📢 **Notificações em Tempo Real**  
   Envia logs de nível `ERROR` e `CRITICAL` diretamente para o Telegram.
 
-- 🗂 **Registro Local Automático**  
-  Salva logs (`INFO`, `WARNING`, `ERROR`, etc.) em arquivos `.log`.
-
 - ⚙️ **Configuração Simplificada**  
   Suporte nativo a variáveis de ambiente via arquivo `.env`.
 
@@ -37,7 +34,34 @@ pip install py-logger-alert
 
 ## ⚙️ Configuração do Telegram
 
-Crie um arquivo `.env` na raiz do projeto:
+### 🤖 Criando o Bot (BotFather)
+
+1. Abra o Telegram e procure por **@BotFather**
+2. Envie o comando:
+```
+/start
+```
+3. Crie o bot:
+```
+/newbot
+```
+4. Defina o nome e o username (termina com `bot`)
+5. Copie o **TOKEN** retornado
+
+---
+
+### 🆔 Obtendo o Chat ID
+
+1. Procure por **@userinfobot**
+2. Envie:
+```
+/start
+```
+3. Copie o número retornado (Chat ID)
+
+---
+
+## 📁 Arquivo .env
 
 ```env
 TELEGRAM_TOKEN=seu_token_aqui
@@ -64,14 +88,6 @@ try:
 except Exception as e:
     logging.error(f"Erro crítico detectado: {e}", exc_info=True)
 ```
-
----
-
-## 📖 Função Principal
-
-### setup_monitoring(nome_robo, log_filename)
-
-Configura o ambiente global de logging da aplicação.
 
 ---
 
