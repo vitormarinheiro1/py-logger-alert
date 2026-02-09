@@ -34,8 +34,8 @@ def setup_monitoring(nome_robo, log_filename):
     load_dotenv()
 
     TOKEN = os.getenv(
-        "TELEGRAM_TOKEN") or "8292368080:AAFvAK_Zs_91Hl0RrusOGSNON7gNiAsKkPU"
-    CHAT_ID = os.getenv("TELEGRAM_CHAT_ID") or "7503875601"
+        "TELEGRAM_TOKEN")
+    CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
     # Garante que o arquivo tenha a extensão .log
     if not log_filename.lower().endswith(".log"):
